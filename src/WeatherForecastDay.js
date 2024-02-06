@@ -3,15 +3,15 @@ import WeatherIcon from "./WeatherIcon";
 
 export default function WeatherForecastDay(props) {
   function maxTemperature() {
-    let temperature = math.round(props.data.temp.max);
+    let temperature = Math.round(props.data.temp.max);
     return `${temperature}°`;
   }
   function minTemperature() {
-    let temperature = math.round(props.data.temp.max);
+    let temperature = Math.round(props.data.temp.max);
     return `${temperature}°`;
   }
   function day() {
-    let date = new Date(props.date.dt * 1000);
+    let date = new Date(props.data.dt * 1000);
     let day = date.getDate();
 
     let days = ["Sun, Mon, Tue, Wed, Thu, Fri, Sat"];
